@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video y Audio en HTML</title>
+</head>
+<body>
+    <!-- Elemento vídeo con sus atributos básicos -->
+    <video src="media/pexels-kei-scampa-6114303.mp4"
+           controls
+           autoplay
+           width="640"></video>
+    <!-- Elemento vídeo con atributos adicionales -->
+    <video src="media/pexels-kei-scampa-6114303.mp4"
+           controls
+           muted
+           preload="none"
+           width="640"></video>
+    <!-- Elemento vídeo con subtítulos -->
+    <video controls width="640">
+        <source src="media/pexels-kei-scampa-6114303.mp4">
+        <!-- Se utilizan subtitulos en formato .vtt -->
+        <track src="media/subes.vtt"
+               srclang="es"
+               label="Español">
+        <track src="media/suben.vtt"
+               srclang="en"
+               label="English">
+    </video>
+    <!-- Elemento audio -->
+    <audio src="media/BAD BUNNY _ #shorts Un Verano Sin Ti ❤️🌊☀️🌴.m4a"
+           controls></audio>
+</body>
+</html>
